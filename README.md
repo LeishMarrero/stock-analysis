@@ -12,50 +12,42 @@ The analysis revealed that more stocks were traded and there was a higher rate o
 When refactoring the code, a new variable (tickerIndex) was created to access the correct index across the new output arrays (tickerVolumes, tickerStartingPrices, and tickerEndingPrices). Then the foor loops were restructured with the new arrays to get a list for Tickers, Daily Volumes, and Return in less amount of time than the original code. 
 
 We went from our original For Loop,
-**_ORIGINAL:_** If Cells(j, 1).Value = ticker Then
+**_ORIGINAL:_** 
+
+If Cells(j, 1).Value = ticker Then
     
         totalVolume = totalVolume + Cells(j, 8).Value
 
     End If
-    
-    '5b.Find the starting price for the current ticker.
     
     If Cells(j - 1, 1).Value <> ticker And Cells(j, 1).Value = ticker Then
         
         startingPrice = Cells(j, 6).Value
     
     End If
-        
-    '5c.Find the ending price for the current ticker.
     
     If Cells(j + 1, 1).Value <> ticker And Cells(j, 1).Value = ticker Then
     
     endingPrice = Cells(j, 6).Value
     
+   
    To the refactored For Loop, 
    
    **_REFACTORED:_**
    
    tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
         
-     
-        '3b) Check if the current row is the first row with the selected tickerIndex.
         'If  Then
             
             If Cells(i - 1, 1).Value <> tickers(tickerIndex) And Cells(i, 1).Value = tickers(tickerIndex) Then
                 tickerStartingPrices(tickerIndex) = Cells(i, 6).Value
           
             End If
-       
-           
-        '3c) check if the current row is the last row with the selected ticker
-         'If the next row’s ticker doesn’t match, increase the tickerIndex.
+
         'If  Then
         If Cells(i + 1, 1).Value <> tickers(tickerIndex) And Cells(i, 1).Value = tickers(tickerIndex) Then
             tickerEndingPrices(tickerIndex) = Cells(i, 6).Value
             
-       
-        
             '3d Increase the tickerIndex.
             tickerIndex = tickerIndex + 1
    
