@@ -8,7 +8,7 @@ The analysis revealed that more stocks were traded and there was a higher rate o
 
 ![VBA_Challenge_2017](VBA_Challenge_2017.png) ![VBA_Challenge_2018](VBA_Challenge_2018.png)
 
-# Refactoring the Code
+## Refactoring the Code
 When refactoring the code, a new variable (tickerIndex) was created to access the correct index across the new output arrays (tickerVolumes, tickerStartingPrices, and tickerEndingPrices). Then the foor loops were restructured with the new arrays to get a list for Tickers, Daily Volumes, and Return in less amount of time than the original code. 
 
 We went from our original code,
@@ -52,7 +52,7 @@ We went from our original code,
             tickerIndex = tickerIndex + 1
    
 
-# Run Times
+## Run Times
 The following are the run times using the original code:
 
 ![Green_Stocks2017](Green_Stocks2017.png) 
@@ -65,6 +65,7 @@ The following are the run times using the refactored code:
 
 ![VBA_Challenge_Run2018](VBA_Challenge_Run2018.png)
 
-## Summary: In a summary statement, address the following questions.
-#What are the advantages or disadvantages of refactoring code?
-#How do these pros and cons apply to refactoring the original VBA script?
+## Summary
+- Refactoring the code has a major advatange of reducing the time it takes to analyze the data. The disadvantage of refactoring is that syntax error can mess you up if you do not have a full understanding of VBA code. Having a code that already works and trying to reorganize it can be challenging at first but it does pay off at the end.
+
+- The pro is that you already have the code established and you just have to make minor changes to make the code run more effectively. The con is that the original code might not jbe as effective and will have a longer running time. Refactoring our code allowed us to cut 5 to 6 seconds in our run time. This was only analyzing data for 12 companies, if we had a larger data set it might have taken minutes.
