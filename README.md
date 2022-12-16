@@ -12,6 +12,7 @@ The analysis revealed that more stocks were traded and there was a higher rate o
 When refactoring the code, a new variable (tickerIndex) was created to access the correct index across the new output arrays (tickerVolumes, tickerStartingPrices, and tickerEndingPrices). Then the foor loops were restructured with the new arrays to get a list for Tickers, Daily Volumes, and Return in less amount of time than the original code. 
 
 We went from our original code,
+
 **_ORIGINAL:_** 
 
     If Cells(j, 1).Value = ticker Then
@@ -53,11 +54,15 @@ We went from our original code,
 
 # Run Times
 The following are the run times using the original code:
+
 ![Green_Stocks2017](Green_Stocks2017.png) 
+
 ![Green_Stocks2018](Green_Stocks2018.png)
 
 The following are the run times using the refactored code:
+
 ![VBA_Challenge_Run2017](VBA_Challenge_Run2017.png)
+
 ![VBA_Challenge_Run2018](VBA_Challenge_Run2018.png)
 
 ## Summary: In a summary statement, address the following questions.
