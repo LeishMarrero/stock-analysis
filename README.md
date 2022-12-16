@@ -1,6 +1,6 @@
 # Green Stock Analysis
 ## Overview of Project
-Steve's parents want to invest their money into New Energy Corporation (DAQO). Instead of putting all of their money into one company, Steve wants to analyze 12 green energy stock companies based on how actively the stock is traded and its yearly return. He has given me an Excel containing the stock data and I will be using Visual Basic for Applications (VBA) to build a macro to analyze all the data in a click of a button.
+Steve's parents want to invest their money into New Energy Corporation (DAQO). Instead of putting all of their money into one company, Steve wants to analyze 12 green energy stock companies based on how actively the stocks are traded and their yearly return. He has given me an Excel containing the stock data and I will be using Visual Basic for Applications (VBA) to build a macro to analyze all the data in a click of a button.
 ### Purpose
 The purpose is to use VBA to build a macro that will analyze data for the entire stock market in 2017 and 2018. A macro was created with a SubRoutine, Range and For Loops to analyze all the stock data. After analyzing the stocks, the macro was refactored to run more efficiently in less amount of time.
 ## Results
